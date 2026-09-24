@@ -498,7 +498,7 @@ function ChessSimulator() {
       </div>
 
       <div className="w-full lg:w-2/3 bg-[#0a0a0a] relative flex items-center justify-center p-4 lg:p-8 min-h-[400px]">
-        <div className="w-full max-w-[450px] shadow-[0_0_40px_rgba(0,0,0,0.8)] rounded overflow-hidden border-4 border-[#1a1a1a]">
+        <div className="w-full max-w-[450px] shadow-[0_0_40px_rgba(0,0,0,0.8)] rounded overflow-hidden border-4 border-[#1a1a1a] relative">
           <Chessboard 
             options={{
               position: game.fen(),
@@ -510,6 +510,19 @@ function ChessSimulator() {
             }}
           />
           
+          {game.isGameOver() && (
+            <div className="absolute inset-0 bg-black/80 backdrop-blur-[2px] flex flex-col items-center justify-center z-10">
+              <p className="text-2xl font-bold text-white text-center px-4 leading-relaxed mb-4">
+                {gameStatus}
+              </p>
+              <button 
+                onClick={restartGame} 
+                className="px-6 py-2 bg-nardo text-dark font-bold rounded hover:bg-white transition-colors"
+              >
+                Jogar Novamente
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
