@@ -26,11 +26,11 @@ export function Projects() {
     {
       id: 2,
       title: "Sistema ADAS The Crew 2",
-      description: "",
+      description: "https://github.com/igorSanms/adas-thecrew2",
       icon: Eye,
-      tags: [""],
+      tags: ["Python, YOLO, OpenCV"],
       link: "#",
-      status: "em andamento"
+      status: "concluído"
     },
     {
       id: 3,
