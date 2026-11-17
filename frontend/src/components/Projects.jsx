@@ -26,10 +26,10 @@ export function Projects() {
     {
       id: 2,
       title: "Sistema ADAS The Crew 2",
-      description: "https://github.com/igorSanms/adas-thecrew2",
+      description: "Sistema de direção autônoma (ADAS Nível 2) em tempo real desenvolvido em Python, utilizando o jogo The Crew 2 como ambiente de simulação. Combina visão computacional clássica (OpenCV) para detecção de faixas e controle lateral via controlador PD com Lookahead, redes neurais (YOLOv8) para detecção de tráfego, controle de cruzeiro adaptativo (ACC) e frenagem de emergência (AEB), além de uma máquina de estados finitos (FSM) que envia comandos analógicos ao veículo por meio de um controle virtual",
       icon: Eye,
-      tags: ["Python, YOLO, OpenCV"],
-      link: "#",
+      tags: ["Python", "YOLO", "OpenCV"],
+      link: "https://github.com/igorSanms/adas-thecrew2",
       status: "concluído"
     },
     {
